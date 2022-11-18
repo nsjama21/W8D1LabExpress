@@ -6,13 +6,16 @@ class Index extends React.Component {
     return (
       <div>
         <h1>Fruits Index Page</h1>
+        <nav>
+          <a href="/fruits/new">Create Fruit</a>
+        </nav>
         <ul>
           {
             fruits.map((fruit, i) => {
               return (
-                <li key = {i}> 
+                <li> 
                   The{' '}
-                  <a href={`/fruits/${i}`}>{fruit.name}</a>
+                  <a style={{color: "red"}} href={`/fruits/${fruit._id}`}>{fruit.name}</a>
                   {" "}
                   is {fruit.color} <br />
                   {

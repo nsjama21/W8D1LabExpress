@@ -2,7 +2,7 @@ const React = require("react");
 
 class Show2 extends React.Component {
   render() {
-    const {name, color, readyToEat} = this.props
+    const {name, color, readyToEat} = this.props.vegetable
     return (
       <div>
         <h1>Show Page</h1>
